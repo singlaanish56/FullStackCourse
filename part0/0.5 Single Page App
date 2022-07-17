@@ -1,0 +1,13 @@
+part0 0.5 singlepage
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: basic html-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: spa.js
+
+note over browser:
+js file on browser fetches data as json
+js file manipulates the single html page
+adding exisitng notes using DOM API
+end note
