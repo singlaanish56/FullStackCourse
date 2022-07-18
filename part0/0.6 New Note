@@ -1,0 +1,25 @@
+part0 0.6 newNote
+
+browser->server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spahttps://studies.cs.helsinki.fi/exampleapp/new_note
+
+note over server:
+server recieves new note value with content 
+and timestamp in req body as json data
+end note
+
+server->browser: 201 created
+
+note over browser:
+default action is prevented,
+and data is handled on browser
+end note
+
+note over browser:
+JS file on browser handles
+creating new note obj and
+adding new note value,
+rerendering the page
+end note
+
+browser->server: Send the new notes array
+
